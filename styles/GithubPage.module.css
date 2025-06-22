@@ -7,15 +7,30 @@
 
 .pageHeading {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding-top: 3rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background-color: rgba(47, 55, 55, 0.643);
+  padding: 20px 0px;
 }
 
 .githubPage {
   width: 100%;
   padding: 1rem 0;
+  margin-top: 30px;
+}
+
+.Profile{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.spanTitle{
+  width: 1px;
+  height: 50px;
+  background-color: bisque;
 }
 
 .pageTitle {
@@ -134,11 +149,12 @@
   background: rgba(255, 255, 255, 0.12);
 }
 
-.sectionHeader {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 1.5rem 0 1rem;
+
+
+.image{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .sectionIcon {
@@ -147,7 +163,7 @@
 }
 
 .sectionTitle {
-  font-size: 1.2rem;
+  font-size: 1em;
   font-weight: 600;
   margin: 0;
 }

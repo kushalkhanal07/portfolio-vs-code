@@ -3,38 +3,33 @@ import styles from '@/styles/ContactCode.module.css';
 const contactItems = [
   {
     social: 'website',
-    link: 'nitinranganath.com',
+    link: 'KushalKhanal.com.np',
     href: 'https://nitinranganath.com',
   },
   {
     social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    link: 'khanalkushal22@gmail.com',
+    href: 'mailto:khanalkushal22@gmail.com',
   },
   {
     social: 'github',
-    link: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
+    link: 'github/kushal',
+    href: 'https://github.com/kushalkhanal07',
   },
   {
     social: 'linkedin',
-    link: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
+    link: 'linkedin/kushal',
+    href: 'https://www.linkedin.com/in/kushal-khanal-268b792b7',
   },
   {
-    social: 'twitter',
-    link: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
+    social: 'instagram',
+    link: 'instagram/kushal',
+    href: 'https://www.instagram.com/kushal_khanal__/',
   },
   {
-    social: 'telegram',
-    link: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    social: 'peerlist',
-    link: 'nitinranganath',
-    href: 'https://peerlist.io/nitinranganath',
+    social: 'facebook',
+    link: 'facebook/kushal',
+    href: 'https://www.facebook.com/kushal.khanal.792',
   },
 ];
 

@@ -4,39 +4,51 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
+  frontend: string[];
+  backend: string[];
+  database: string | null;
 }
 
 export const projects: Project[] = [
   {
-    title: 'Driwwwle',
+    title: "Kinimini Multivendor Ecommerce",
     description:
-      'Discover creative websites and developers. A portal for you to share your projects.',
-    logo: '/logos/driwwwle.svg',
-    link: 'https://github.com/itsnitinr/driwwwle',
-    slug: 'driwwwle',
+      "Multivendor Ecommerce Site with admin panels for vendors , admin.",
+    logo: "/kinimini.png",
+    link: "https://kinimini.com.np/",
+    slug: "driwwwle",
+    frontend: ["Next.js", "Tailwind", "Shadcn UI"],
+    backend: ["Node.js"],
+    database: "MongoDB",
   },
   {
-    title: 'VSCode Portfolio',
-    description:
-      'A Visual Studio Code themed developer portfolio built with Next.js and CSS Modules.',
-    logo: '/logos/vsc.svg',
-    link: 'https://github.com/itsnitinr/vscode-portfolio',
-    slug: 'vscode-portfolio',
+    title: "Hyberlab IT Solutions Profile",
+    description: "Official website of Hyberlab IT Solutions, an IT Company.",
+    logo: "/hyberlab.png",
+    link: "https://www.hyberlab.com/",
+    slug: "vscode-portfolio",
+    frontend: ["Next.js", "Tailwind", "React-query"],
+    backend: [],
+    database: null,
   },
   {
-    title: 'Subtrackt',
-    description:
-      'A simple and elegant way to track your subscriptions and save money.',
-    logo: '/logos/subtrackt.svg',
-    link: 'https://github.com/itsnitinr/subtrackt',
-    slug: 'subtrackt',
+    title: "Siddhartha Hardwares",
+    description: "A Website for electronic item seller.",
+    logo: "/Siddhartha.png",
+    link: "https://www.siddharthahardwares.com/",
+    slug: "subtrackt",
+    frontend: ["Next.js", "Tailwind"],
+    backend: ["Node.js"],
+    database: null,
   },
   {
-    title: 'Coolify Deployments',
-    description:
-      'VSCode extension to track and deploy your Coolify applications.',
-    logo: '/logos/coolify.svg',
-    link: 'https://github.com/itsnitinr/coolify-vscode-extension',
-    slug: 'coolify-vscode-extension',
+    title: "SND Cares",
+    description: "A basic website for local hardware shop.",
+    logo: "/SND cares.png",
+    link: "https://www.sndcares.com/",
+    slug: "coolify-vscode-extension",
+    frontend: ["Next.js","Tailwind","Material UI"],
+    backend: [],
+    database: null,
   },
 ];

@@ -1,8 +1,9 @@
 import Image from 'next/image';
 
-import { Project } from '@/types';
+// import { Project } from '@/types';
 
 import styles from '@/styles/ProjectCard.module.css';
+import { Project } from '@/types';
 
 interface ProjectCardProps {
   project: Project;
@@ -21,13 +22,32 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <Image
             src={project.logo}
             alt={`${project.title} logo`}
-            width={24}
-            height={24}
+            width={100}
+            height={100}
             className={styles.logo}
           />
         </div>
         <h3 className={styles.title}>{project.title}</h3>
         <p className={styles.description}>{project.description}</p>
+        <div>
+          <div>
+            <p className={styles.titleContent}>Frontend</p>
+            <div className={styles.flexButton}>
+              {project?.frontend?.map((language)=>{
+                return <>
+                <button className={styles.textButton}>{language}</button>
+                </>
+              })}
+             
+            </div>
+            {project?.backend.length > 0 &&<p className={styles.titleContent}>Backend</p>}
+            {
+              project?.backend.length > 0 && project.backend.map((language) => <button className={styles.textButton}>{language}</button>)
+            }
+            {project?.database && <p className={styles.titleContent}>Database</p>}
+            {project?.database && <button className={styles.textButton}>MongoDB</button>}
+          </div>
+        </div>
       </div>
     </a>
   );

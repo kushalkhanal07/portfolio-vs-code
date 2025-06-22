@@ -15,6 +15,9 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
+  frontend: string[];
+  backend: string[];
+  database: string | null;
 }
 
 export interface Repo {

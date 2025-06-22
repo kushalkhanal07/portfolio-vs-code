@@ -9,26 +9,11 @@ interface ArticlesPageProps {
 }
 
 const ArticlesPage = ({ articles }: ArticlesPageProps) => {
+  console.log(articles)
   return (
     <div className={styles.layout}>
-      <h1 className={styles.pageTitle}>My Articles</h1>
-      <p className={styles.pageSubtitle}>
-        Recent posts from{' '}
-        <a
-          href="https://dev.to/itsnitinr"
-          target="_blank"
-          rel="noopener"
-          className={styles.underline}
-        >
-          dev.to
-        </a>{' '}
-        where I share insights and tutorials about web development.
-      </p>
-      <div className={styles.container}>
-        {articles.map((article) => (
-          <ArticleCard key={article.id} article={article} />
-        ))}
-      </div>
+      <h1 className={styles.pageTitle}>Will be available soon</h1>
+      
     </div>
   );
 };

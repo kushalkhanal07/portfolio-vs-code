@@ -14,7 +14,7 @@ export default function HomePage() {
       type: 'variable',
     },
     { code: '  const developerInfo = {', type: 'variable' },
-    { code: "    name: 'Nitin Ranganath',", type: 'array-item' },
+    { code: "    name: 'Kushal Khanal',", type: 'array-item' },
     { code: "    role: 'Full Stack Developer',", type: 'array-item' },
     { code: "    bio: 'Building modern web experiences'", type: 'array-item' },
     { code: '  };', type: 'array-end' },
@@ -55,7 +55,7 @@ export default function HomePage() {
   return (
     <div className={styles.heroLayout}>
       <div className={styles.container}>
-        <div className={styles.codeSection}>
+        {/* <div className={styles.codeSection}>
           <div className={styles.codeContainer}>
             <div className={styles.editorContent}>
               <div className={styles.lineNumbers}>
@@ -87,18 +87,17 @@ export default function HomePage() {
               <div className={styles.overlayGlow}></div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.infoSection}>
           <h1 className={styles.developerName}>
-            Nitin <span className={styles.accentText}>Ranganath</span>
+            Kushal <span className={styles.accentText}>Khanal</span>
           </h1>
 
           <div className={styles.developerRole}>Full Stack Web Developer</div>
 
           <p className={styles.bio}>
-            I build elegant, responsive web applications with modern
-            technologies. Focused on clean code and intuitive user experiences.
+            Motivated full-stack web developer with over 1 year of frontend and 6 months of backend experience, currently working full-time at Hyberlab after completing a 3-month internship. I specialize in building scalable e-commerce platforms using React, Next.js, TypeScript, Node.js.
           </p>
 
           <div className={styles.actionLinks}>
