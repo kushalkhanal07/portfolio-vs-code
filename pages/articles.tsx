@@ -1,4 +1,3 @@
-import ArticleCard from '@/components/ArticleCard';
 
 import { Article } from '@/types';
 

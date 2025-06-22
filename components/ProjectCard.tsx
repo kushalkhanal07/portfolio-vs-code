@@ -42,7 +42,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             </div>
             {project?.backend.length > 0 &&<p className={styles.titleContent}>Backend</p>}
             {
-              project?.backend.length > 0 && project.backend.map((language) => <button className={styles.textButton}>{language}</button>)
+              project?.backend.length > 0 && project.backend.map((language,idx) => <button key={idx} className={styles.textButton}>{language}</button>)
             }
             {project?.database && <p className={styles.titleContent}>Database</p>}
             {project?.database && <button className={styles.textButton}>MongoDB</button>}

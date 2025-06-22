@@ -1,56 +1,56 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { VscArrowRight } from 'react-icons/vsc';
 
 import styles from '@/styles/HomePage.module.css';
 
 export default function HomePage() {
-  const [activeLineIndex, setActiveLineIndex] = useState(0);
+  // const [activeLineIndex, setActiveLineIndex] = useState(0);
 
-  const codeLines = [
-    { code: 'const HomePage = () => {', type: 'function' },
-    {
-      code: '  const [isLoaded, setIsLoaded] = useState(true);',
-      type: 'variable',
-    },
-    { code: '  const developerInfo = {', type: 'variable' },
-    { code: "    name: 'Kushal Khanal',", type: 'array-item' },
-    { code: "    role: 'Full Stack Developer',", type: 'array-item' },
-    { code: "    bio: 'Building modern web experiences'", type: 'array-item' },
-    { code: '  };', type: 'array-end' },
-    { code: '', type: 'blank' },
-    { code: '  useEffect(() => {', type: 'nested-function' },
-    {
-      code: '    document.title = `${developerInfo.name} | Portfolio`;',
-      type: 'return',
-    },
-    { code: '    setIsLoaded(true);', type: 'function-call' },
-    { code: '  }, []);', type: 'close' },
-    { code: '', type: 'blank' },
-    { code: '  return (', type: 'return-object' },
-    { code: '    <main className="hero-container">', type: 'object-method' },
-    { code: '      <h1>{developerInfo.name}</h1>', type: 'object-method' },
-    { code: '      <p>{developerInfo.role}</p>', type: 'object-method' },
-    { code: '      <div className="cta">', type: 'object-method' },
-    {
-      code: '        <Link href="/projects">View Projects</Link>',
-      type: 'object-method',
-    },
-    { code: '      </div>', type: 'object-method' },
-    { code: '    </main>', type: 'object-method' },
-    { code: '  );', type: 'close' },
-    { code: '};', type: 'close-function' },
-    { code: '', type: 'blank' },
-    { code: 'export default HomePage;', type: 'function-call' },
-  ];
+  // const codeLines = [
+  //   { code: 'const HomePage = () => {', type: 'function' },
+  //   {
+  //     code: '  const [isLoaded, setIsLoaded] = useState(true);',
+  //     type: 'variable',
+  //   },
+  //   { code: '  const developerInfo = {', type: 'variable' },
+  //   { code: "    name: 'Kushal Khanal',", type: 'array-item' },
+  //   { code: "    role: 'Full Stack Developer',", type: 'array-item' },
+  //   { code: "    bio: 'Building modern web experiences'", type: 'array-item' },
+  //   { code: '  };', type: 'array-end' },
+  //   { code: '', type: 'blank' },
+  //   { code: '  useEffect(() => {', type: 'nested-function' },
+  //   {
+  //     code: '    document.title = `${developerInfo.name} | Portfolio`;',
+  //     type: 'return',
+  //   },
+  //   { code: '    setIsLoaded(true);', type: 'function-call' },
+  //   { code: '  }, []);', type: 'close' },
+  //   { code: '', type: 'blank' },
+  //   { code: '  return (', type: 'return-object' },
+  //   { code: '    <main className="hero-container">', type: 'object-method' },
+  //   { code: '      <h1>{developerInfo.name}</h1>', type: 'object-method' },
+  //   { code: '      <p>{developerInfo.role}</p>', type: 'object-method' },
+  //   { code: '      <div className="cta">', type: 'object-method' },
+  //   {
+  //     code: '        <Link href="/projects">View Projects</Link>',
+  //     type: 'object-method',
+  //   },
+  //   { code: '      </div>', type: 'object-method' },
+  //   { code: '    </main>', type: 'object-method' },
+  //   { code: '  );', type: 'close' },
+  //   { code: '};', type: 'close-function' },
+  //   { code: '', type: 'blank' },
+  //   { code: 'export default HomePage;', type: 'function-call' },
+  // ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveLineIndex((prev) => (prev + 1) % codeLines.length);
-    }, 2000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setActiveLineIndex((prev) => (prev + 1) % codeLines.length);
+  //   }, 2000);
 
-    return () => clearInterval(interval);
-  }, [codeLines.length]);
+  //   return () => clearInterval(interval);
+  // }, [codeLines.length]);
 
   return (
     <div className={styles.heroLayout}>
